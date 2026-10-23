@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+
+ </style>
+</head>
+<body>
+   <p id="text"> Java Script Styling</p>   
+   <button onclick="change()">Change Style</button>
+      <script>
+        function change(){
+         document.getElementById("text").style.color="red";
+          document.getElementById("text").style.fontSize = "30px";
+          document.getElementById("text").style.background="pink";
+        }
+    </script> 
+
+    <h1 id="txt" onmouseover="changeclr()" onmouseout="original()">HELOOOOOOOOOOOOOOOO</h1>
+    <script>
+        function changeclr(){
+            document.getElementById("txt").style.color="pink";
+        }
+        function original(){
+            document.getElementById("txt").style.color="black";
+        }
+    </script> 
+
+    <button id="btn">Click me</button>
+    <p id="res"></p>
+    <script>
+        document.getElementById("btn")
+        .addEventListener("click",function(){
+            document.getElementById("res").innerHTML="Button clicked Sucessfully!!";
+        })
+    </script>
+
+</body>
+</html> 

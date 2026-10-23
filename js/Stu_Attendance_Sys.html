@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student|Attendance |System</title>
+</head>
+<body>
+    <h1>
+        Student Attendence System!!
+    </h1>
+    <input type="text" id="stuname" placeholder="Enter Name">
+    <button onclick="Add()">Add Student</button>
+    <ul id="stulist"></ul>
+    <script>
+        function Add(){
+            let name=document.getElementById("stuname").value;
+            if(name===""){
+                alert("Please Enter the name!!");
+                return;
+            }
+            let li=document.createElement("li");
+            let span=document.createElement("span");
+            span.textContent=name+"- absent";
+            
+        }
+
+    </script>
+</body>
+</html>

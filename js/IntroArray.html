@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>JavaScript Array</h2>
+   <p id="result"></p>
+   <script>
+    let stu=[
+        "Hari",
+        "Karan",
+        "kajal"
+    ];
+ let output="";
+ for(let i=0;i<stu.length;i++){
+    output+=(i+1)+"."+stu[i]+"<br>";
+ }
+    document.getElementById("result").innerHTML=output;
+    // stu.push("lela")
+    // stu.pop();
+    // stu.shift();
+    // document.getElementById("result").innerHTML=stu;
+    // document.getElementById("result").innerHTML=stu[1];
+   </script> 
+</body>
+</html>
