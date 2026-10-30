@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    <p id ="result">
+</p>
+<script>
+let original=[10,20,30];
+let copy=[...original];
+copy.push(40);
+console.log(original)
+console.log(copy);
+let student={
+    name:"Rehul",
+    class:"MCA"
+};
+let result={
+    mark:855,
+    grade:"A"
+};
+let details={...student,...result}
+console.log(details)
+//2nd method
+let name="Amit"
+let marks=88
+let stu={
+    name,
+    marks,
+    display(){
+        console.log(`${this.name}scored${this.marks}`);
+    }
+};
+stu.display();
+
+//3rd method
+let field="email"
+let stu1={
+    name:"Rahul",
+    [field]: "rahul@gmail.com"
+};
+console.log(stu1)
+
+//4th
+
+let employee={
+    productId:101,
+    price:1234,
+    quantity:2,
+    total(){
+        n=this.price*this.quantity
+        console.log(n)
+    }
+}
+console.log(employee);
+employee.total();
+//5th
+let name1="Rahul"
+let marks1=88
+let grade='A'
+let report=`
+Student report Name:${name}
+marks:${marks}
+Grade:${grade}
+Result:${marks1>=40?"Pass":"Fail"}`;
+console.log(report)
+
+    
+
+let student2="Amit";
+let marks2=92;
+document.getElementById("result").innerHTML=`<h2>Student Result</h2>
+<p>Name:${student2}</p>
+<p>Marks:${marks2}</p>
+<p>Status:${marks2>=40?"Pass":"Fail"}</p>`;
+
+</script>
+
+</body>
+</html>
