@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+     function gree(name,callback){
+        console.log('hello'+name);
+        callback;
+        }function wel(){
+            console.log("well")
+        }
+        gree("rahul",wel)
+
+        function calc(a,b,operation){
+            let result=operation(a,b);
+            console.log("result ",result)
+        }
+        function  add(x,y){
+            return x+y
+        }
+        function mul(x,y){
+            return x*y
+        }
+        calc(12,12,add);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
