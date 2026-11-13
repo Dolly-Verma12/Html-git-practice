@@ -5,15 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promise|page</title>
     <script>
-        let mypromise=new Promise(function(resolve, reject){
-            let mark=0;
-            if (mark>20){
-              resolve("Student passs");
+    //     let mypromise=new Promise(function(resolve, reject){
+    //         let mark=0;
+    //         if (mark>20){
+    //           resolve("Student passs");
+    //         }else{
+    //             reject("fail");
+    //         }
+    //     });
+    //     mypromise.then(function(result){console.log(result);}).catch(function(error){console.log(error);});
+    let pyment=true;
+    let mypromise=new Promise(function(resolve, reject){
+           setTimeout(()=>{
+            if (pyment){
+              resolve(" passs");
             }else{
                 reject("fail");
             }
+           },2000)
+
         });
-        mypromise.then(function(result){console.log(result);}).catch(function(error){console.log(error);});
+        mypromise.then(function(result){console.log(result);}).
+        catch(function(error){console.log(error);})
+        .finally(function(){console.log("pyment process finished..")});
+        
     </script>
 </head>
 <body>
