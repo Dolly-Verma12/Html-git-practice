@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fetchStu(callback){
+            console.log("Fetching student data");
+        
+        setTimeout(()=>{
+            let stu={
+                name: "Amit",
+                marks:90
+            };
+            callback(stu)
+        },2000);
+    }
+        fetchStu(function(stu){
+            console.log("Student",stu.name);
+            console.log("mark",stu.marks);
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
